@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve",
+    "start": "webpack serve --open",
     "build": "webpack --mode production",
     "format": "prettier --write \"./src/**/*.+(js|jsx)\"",
     "lint": "eslint src/ --fix"
@@ -15,17 +15,24 @@
   "license": "MIT",
   "dependencies": {
     "@babel/eslint-parser": "^7.16.3",
+    "@babel/runtime": "^7.16.3",
+    "@googlemaps/react-wrapper": "^1.1.12",
+    "@react-google-maps/api": "^2.7.0",
+    "axios": "^0.24.0",
     "babel-eslint": "^10.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-paypal-button-v2": "^2.6.3",
     "react-router-dom": "^6.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "dotenv-webpack": "^7.0.3",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-config-prettier": "^8.3.0",
